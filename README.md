@@ -3,7 +3,7 @@
 ### 一.开启本地代理
 #### 克隆项目
 ```
-git clone git@github.com:va-len-tine/nicess.git
+git clone git@github.com:va-len-tine/niceSSR.git
 ```
 #### 进入项目编译，生成可执行程序：OpenSocks5.exe
 ```
