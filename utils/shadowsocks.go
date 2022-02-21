@@ -93,7 +93,8 @@ func (ssk *Shadowsocks)TestUrl(url string) float64  {
 // GetFastSS 测试全部SS，返回时间最短的一个
 func (ssk *Shadowsocks)GetFastSS(url string, path string)(string, error)  {
 	result := ""
-	MinTime := float64(TestTimeOut * len(TestUrl))
+	//MinTime := float64(TestTimeOut * len(TestUrl))
+	var MinTime float64 = 200
 
 	ss,err := ssk.GetAllSS(url,path)
 	if err != nil {
