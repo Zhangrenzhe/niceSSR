@@ -109,7 +109,7 @@ func (ssk *Shadowsocks)GetFastSS(url string, path string)(string, error)  {
 		}
 	}
 	if result == ""{
-		return ss[0],errors.New("未找到可用的ss")
+		return ss[1],errors.New("未找到可用的ss")
 	}
 	return result,nil
 }
