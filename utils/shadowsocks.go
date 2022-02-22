@@ -94,7 +94,7 @@ func (ssk *Shadowsocks)TestUrl(url string) float64  {
 func (ssk *Shadowsocks)GetFastSS(url string, path string)(string, error)  {
 	result := ""
 	//MinTime := float64(TestTimeOut * len(TestUrl))
-	var MinTime float64 = 199
+	var MinTime float64 = 200
 
 	ss,err := ssk.GetAllSS(url,path)
 	if err != nil {
@@ -109,7 +109,7 @@ func (ssk *Shadowsocks)GetFastSS(url string, path string)(string, error)  {
 		}
 	}
 	if result == ""{
-		return "",errors.New("未找到可用的ss")
+		return ss[0],errors.New("未找到可用的ss")
 	}
 	return result,nil
 }
