@@ -27,3 +27,7 @@ SwitchyOmega_Chromium.crx  gfw.txt
 ![blockchain](http://image.youthsweet.com/nicess/nicess-2.png "default")
 #### 切换至proxy代理，至此就可以愉快的访问GitHub、YouTube了！
 ![blockchain](http://image.youthsweet.com/nicess/nicess3.png "default")
+
+#### 解决cmd控制台执行暂停的问题
+右键控制台->默认值->关闭(快速编辑模式)
+![blockchain](http://image.youthsweet.com/nicess/nicess-4.png "default")
